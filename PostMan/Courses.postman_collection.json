@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "389c01a6-37e7-4a1a-b337-e6d619983572",
+		"name": "Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/courses",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/course/0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/course/0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddOnlineCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"C01A11\",\r\n    \"name\":\"Matematiikka\",\r\n    \"length\":12,\r\n    \"teacher\": \"Taina Tepponen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/course/online",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"online"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClassRoomCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"C02A10\",\r\n    \"name\":\"Elektroniikka\",\r\n    \"length\":18,\r\n    \"teacher\": \"Tuomo Mattila\",\r\n    \"defaultClass\" : \"12A101\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/course/classRoom",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"classRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditOnlineCourse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"C01A11\",\r\n    \"name\":\"Matematiikka\",\r\n    \"length\":12,\r\n    \"teacher\": \"Teija RUohonen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/course/online/0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"online",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditClassRoomCourse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\":\"C02A10\",\r\n    \"name\":\"Elektroniikka\",\r\n    \"length\":18,\r\n    \"teacher\": \"Tuomo Mattila\",\r\n    \"defaultClass\" : \"12A109\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/course/classRoom/0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"course",
+						"classRoom",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

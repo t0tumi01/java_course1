@@ -1,0 +1,2 @@
+C01A11,Matematiikka,12,Teija Ruohonen
+C02A10,Elektroniikka,18,Tuomo Mattila,12A109
